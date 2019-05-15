@@ -1,0 +1,200 @@
+.page-chat{
+	background-image: url(/app/image/DSC03855s.jpg);
+	background-attachment: fixed;
+	background-size: 100% auto;
+	width: 100%;
+}
+.close{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	img{
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.chat-head{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,-0%);
+	z-index: 1;
+	span{
+		font:{
+			size: 40px;
+			family: Geometria;
+			weight: bold;
+		}
+	}
+	&__container{
+		width: 1000px;
+		height: 100%;
+		background: rgba(190, 45, 41,0.7);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 0px;
+
+		.foto{
+			img{
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+			}
+		}
+		.inform{
+			margin-left: 20px;
+
+			&__name{
+				font:{
+					family: Geometria;
+					size: 30px;
+					weight: bold;
+				}
+				color: #FFE2C9;
+			}
+			&__city-foto{
+				margin-top: 10px;
+				font:{
+					family: Geometria;
+					size: 15px;
+				}
+				color: #FFA3A1;
+			}
+		}
+	}
+}
+.chat-box{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0, 0, 0,0.5);
+	width: 1000px;
+	height: 1000px;
+	position: relative;
+	margin-top: 110px;
+	margin-bottom: 100px;
+
+	&__photographer{
+		position: absolute;
+		top: 20%;
+		left: 2%;
+		display: flex;
+		flex-direction: row;
+		
+
+		.foto{
+			img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+			}
+		}
+		.container{
+			width: 500px;
+		  height: 100px;
+		  background: white;
+		  margin-left: 10px;
+		  display: flex;
+		  flex-direction: column;
+		}
+		.container-inf{
+			display: flex;
+
+		  &__name{
+		  	font-family: Geometria;
+		  	font-size: 15px;
+		  	margin-right: 10px;
+
+		  }
+		  &__data{
+
+		  }
+		}
+		.container-text{
+			display: flex;
+			margin-top: 10px;
+		}
+	}
+
+	&__customer{
+		position: absolute;
+		top: 5%;
+		right: 2%;
+		display: flex;
+		flex-direction: row;
+
+
+		.foto{
+			order: 1;
+			margin-left: 10px;
+			img{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+			}
+		}
+		.container{
+			width: 500px;
+		  height: 100px;
+		  background: #FFA3A1;
+		  margin-left: 10px;
+		  display: flex;
+		  flex-direction: column;
+		}
+		.container-inf{
+			display: flex;
+
+		  &__name{
+		  	font-family: Geometria;
+		  	font-size: 15px;
+		  	margin-right: 10px;
+
+		  }
+		  &__data{
+
+		  }
+		}
+		.container-text{
+			display: flex;
+			margin-top: 10px;
+		}
+	}
+}
+.chat-message{
+	position: fixed;
+	bottom: 0px;
+	width: 1000px;
+	height: 100px;
+	background: white;
+  left: 50%;
+  transform: translate(-50%, -0%);
+
+  &__container{
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  }
+  textarea{
+  	width: 800px;
+  	height: 90px;
+  	margin: 5px;
+  }
+  &__button{
+  	font-size: 15px;
+  	font-family: Geometria;
+  	padding: 10px;
+  	background: rgba(190, 45, 41,0.7);
+  	border: none;
+  	border-radius: 5px;
+  	margin-left: 10px;
+  	cursor: pointer;
+    color: #FFE2C9;
+  }
+
+}

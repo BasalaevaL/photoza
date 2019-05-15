@@ -1,0 +1,135 @@
+.page-search{
+	width: 100%;
+	height: 100%;
+	background: #FFB87B;
+}
+.search-photographer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	&__title{
+		text-align: center;
+		font:{
+			size: 50px;
+			family: Geometria;
+			weight: bold;
+		}
+		color: #FFE2C9;
+		text-transform: uppercase;
+    line-height: 1.5em;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	}
+}
+.search-box{
+	display: flex;
+	justify-content: center;
+	margin: 30px 0px;
+	
+	.btn{
+		background: #BE2D29;
+		border: none;
+		font:{
+			family: Geometria;
+			size: 20px;
+			weight: bold;
+		}
+		color: #FFE2C9;
+	}
+	.btn:hover{
+		background: red;
+	}
+
+	.card{
+		input{
+			width: 500px;
+			font-size: 20px;
+		}
+	}
+	.city{
+		margin-left: auto;
+		width: 100px;
+	}
+}
+.photographer-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 100%;
+}
+.box-photographer{
+	display: flex;
+	flex-direction: column;
+
+
+	.photo{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+		cursor: pointer;
+		img{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+		}
+	}
+	.photo img:hover{
+		width: 210px;
+		height: 210px;
+		border-radius: 50%;
+	}
+	.infa{
+		display: none;
+		z-index: 1;
+		
+   .name{
+   	display: flex;
+   	justify-content: center;
+   	font:{
+   		family: Geometria;
+   		size: 30px;
+   		weight: bold; 
+   	}
+   	color: #BE2D29;
+   	text-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+   }
+   .city{
+   	display: flex;
+   	justify-content: center;
+   	font:{
+   		family: Geometria;
+   		size: 20px;
+   		weight: bold;
+   	}
+   	color: #FFE2C9;
+   }
+   .work{
+   	display: flex;
+   	justify-content: center;
+   	flex-wrap: wrap;
+   	width: 400px;
+   	img{
+   		width: 140px;
+   		height: 100%;
+   		padding: 5px;
+   	}
+   }
+   .link-personal{
+   	display: flex;
+   	justify-content: center;
+   	margin: 10px 0px;
+    font:{
+    	family: Geometria;
+    	size: 15px;
+    	weight: bold;
+    }
+    color: #BE2D29;
+    cursor: pointer;
+   }
+   .link-personal:hover{
+   	text-decoration: underline;
+   	font-size: 17px;
+   }
+	}
+}

@@ -1,0 +1,68 @@
+.page-error{
+	background: #FFB87B;
+}
+.error-content{
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	&__text{
+		text-align: center;
+		font:{
+			family: Geometria;
+			weight: bold;
+		}
+		
+		&__ur1{
+			font:{
+				size: 100px;
+			}
+			text-transform: uppercase;
+			color: rgb(190, 45, 41);
+			text-shadow: 5px 0 5px #424242, 
+                 0 1px 1px #DD524E, 
+                 -1px 0 1px #DD524E, 
+                 0 -1px 1px #DD524E;
+		}
+		&__ur2{
+			font:{
+				size: 40px;
+			}
+			text-transform: uppercase;
+			color: rgb(190, 45, 41);
+			text-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+		}
+		&__ur3{
+			font:{
+				size: 30px;
+			}
+			color: rgb(190, 45, 41);
+		}
+
+	}
+
+   &__img{
+   	display: flex;
+   	justify-content: center;
+    
+   	img{
+   		width: 500px;
+   		height: 300px;
+   	}
+   }
+
+   &__button{
+   	display: flex;
+   	justify-content: center;
+   
+   .return{
+   	background: rgba(190, 45, 41,0.5);
+   	border: none;
+   	padding: 10px 20px;
+   }
+ }
+
+}

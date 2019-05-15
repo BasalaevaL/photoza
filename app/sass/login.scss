@@ -1,0 +1,472 @@
+.page_2{
+	background-image: url(/app/image/DSC03855s.jpg);
+  background-size: 100% auto;
+  background-attachment: fixed;
+	width: 100%;
+}
+
+.login{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+.form{
+	width: 700px;
+	height: 500px;
+	background: rgba(256,256,256,1);
+  transition: all 2s;
+  border-radius: 10px;
+  position: relative;
+
+
+	  &__title{
+		  display: flex;
+		  justify-content: center;
+		  margin: 30px 0px;
+		  font:{
+			  family: Geometria;
+			  weight: bold;
+			  size: 50px;
+		  }
+		  color: #FFE2C9;
+		  text-transform: uppercase;
+      line-height: 1.5em;
+      text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	  }
+
+	  &__close{
+	    position: absolute;
+	    left: 96%;
+	    top: 0%;
+	    img{
+	    	width: 30px;
+	    	height: 30px;
+	    	opacity: 0.5;
+	    }
+    }
+
+    &__login{
+	    margin: 20px 30px;
+	    display: flex;
+	    flex-direction: column;
+
+		   &__box{
+			    display: flex;
+		      flex-direction: column;
+		      justify-content: center;
+		 
+		    &__email{
+		  	  width: 100%;
+		  	  height: 50px;
+		  	  margin: 20px 0px;
+		  	  border: none;
+		  	  background: none;
+		  	  border-bottom: 1px solid #BE2D29;
+		    	padding-left: 10px;
+		    }
+		    &__password{
+		  	  width: 100%;
+		  	  height: 50px;
+		  	  margin: 20px 0px;
+		  	  border: none;
+		  	  background: none;
+		  	  border-bottom: 1px solid #BE2D29;
+		    	padding-left: 10px;
+		    }
+		  }
+	  }
+
+&__link{
+	display: flex;
+	justify-content: center;
+	margin: 0px 30px;
+	cursor: pointer;
+
+			&__forget{
+				color: #BE2D29;
+				font:{
+          size: 15px;
+          family: Geometria;
+          weight: bold;
+				}
+			}
+		}
+
+&__button{
+  display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	&__entry{
+		font:{
+				size: 20px;
+				family: Geometria;
+				weight: bold; 
+		}
+		margin: 0px 20px;
+			background: none;
+			border: none;
+			color: #FFE2C9;
+		  text-transform: uppercase;
+      line-height: 1.5em;
+      text-shadow: 2px 0 2px #424242, 
+                   0 1px 1px #DD524E, 
+                   -1px 0 1px #DD524E, 
+                   0 -1px 1px #DD524E;
+	}
+	&__entry:hover{
+		text-decoration: underline;
+	}
+	&__registr:hover{
+		text-decoration: underline;
+	}
+
+	&__registr{
+		font:{
+				size: 20px;
+				family: Geometria;
+				weight: bold; 
+		}
+		margin: 0px 20px;
+			background: none;
+			border: none;
+			color: #FFE2C9;
+		  text-transform: uppercase;
+      line-height: 1.5em;
+      text-shadow: 2px 0 2px #424242, 
+                   0 1px 1px #DD524E, 
+                   -1px 0 1px #DD524E, 
+                   0 -1px 1px #DD524E;
+	}
+}
+}
+
+
+.forget a:visited{
+	text-decoration: none;
+  color: #BE2D29 !important; /* Цвет ссылок */
+}
+.forget a:active{
+	text-decoration: none;
+  color: #BE2D29 !important; /* Цвет ссылок */
+}
+.forget a{
+	text-decoration: none;
+  color: #BE2D29 !important; /* Цвет ссылок */
+}
+.forget a:hover{
+	text-decoration: none;
+  color: #BE2D29 !important; /* Цвет ссылок */
+}
+
+/* форма регистрации*/
+
+.registration{
+  display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 50px;
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+}
+
+.form-reg{
+	width: 700px;
+	height: 500px;
+	background: rgba(256,256,256,1);
+  border-radius: 10px;
+  position: relative;
+  display: none;
+
+    &__close{
+      position: absolute;
+	    left: 96%;
+	    top: 0%;
+	    img{
+	    	width: 30px;
+	    	height: 30px;
+	    	opacity: 0.5
+	    }
+    }
+
+    &__title{
+  	  display: flex;
+		  justify-content: center;
+		  margin: 30px 0px;
+		  font:{
+			  family: Geometria;
+			  size: 50px;
+			  weight: bold;
+		  }
+		  color: #FFE2C9;
+		  text-transform: uppercase;
+      line-height: 1.5em;
+      text-shadow: 6px 6px 0px rgba(0,0,0,0.2); 
+    }
+}
+
+.registration-form{
+  margin: 0px 20px;
+  	
+  	&__box{
+  	  display: flex;
+  	  flex-direction: column;
+
+  	  input{
+  	   	margin-top: 20px;
+  	   	width: 100%;
+  	   	height: 30px;
+  	   	border:none;
+  	   	background: none;
+  	   	border-bottom: 2px solid #BE2D29;
+  	   	padding-left: 10px;
+  	   	font-size: 15px;
+  	  }
+  	}
+
+  	&__check{
+  		margin-top: 20px;
+  	}
+
+  	&__button{
+  		display: flex;
+  		justify-content: center;
+  		
+  		button{
+  				font:{
+            size: 20px;
+            family: Geometria;
+            weight: bold;
+  				}
+  				color: #FFE2C9;
+  				background: none;
+		      text-transform: uppercase;
+          line-height: 1.5em;
+          text-shadow: 2px 0 2px #424242, 
+                 0 1px 1px #DD524E, 
+                 -1px 0 1px #DD524E, 
+                 0 -1px 1px #DD524E;
+  				border: none;
+  				padding: 10px;
+  		}
+  	}
+  	&__button:hover{
+  		text-decoration: underline;
+  	}
+
+
+  		&__confirm{
+  			input{
+  	   	margin-top: 10px;
+  	   	width: 100%;
+  	   	height: 50px;
+  	   	border-radius: 20px;
+  	   	border: 2px solid #BE2D29;
+  	   	padding-left: 10px;
+  	   	font-size: 20px;
+  	   }
+  		}
+  	}
+
+
+.form-check{
+  margin: 5px 10px;
+
+  &__input{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  &__label{
+    margin-left: 20px;
+    font:{
+     size: 15px;
+    }
+  }
+}
+.registration__form__button a:visited{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.registration__form__button a:active{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.registration__form__button a{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.registration__form__button a:hover{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+
+.password{
+  display: flex;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	left: 50%;
+	top: 43%;
+	transform: translate(-50%, -50%);
+}
+
+.form-pasw{
+	width: 700px;
+	height: 500px;
+	background: rgba(256,256,256,1);
+  border-radius: 10px;
+  position: relative;
+  display: none;
+
+    &__close{
+      position: absolute;
+	    left: 96%;
+	    top: 0%;
+	    img{
+	    	width: 30px;
+	    	height: 30px;
+	    	opacity: 0.5;
+	    }
+    }
+
+    &__title{
+  	  display: flex;
+		  justify-content: center;
+		  margin: 30px 0px;
+		  font:{
+			  family: Geometria;
+			  size: 50px;
+			  weight: bold;
+		  }
+		  color: #FFE2C9;
+		  text-transform: uppercase;
+      line-height: 1.5em;
+      text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    }
+}
+
+.form-password{
+  margin: 0px 20px;
+  	
+
+  	&__box{
+  	  display: flex;
+  	  flex-direction: column;
+
+  	  input{
+  	   	margin-top: 20px;
+  	   	width: 100%;
+  	   	height: 30px;
+  	   	border:none;
+  	   	background: none;
+  	   	border-bottom: 2px solid #BE2D29;
+  	   	padding-left: 10px;
+  	   	font-size: 15px;
+  	  }
+  	}
+  }
+
+.form-password{
+
+  		&__button{
+       display: flex;
+  		 justify-content: center;
+  		 margin-top: 20px;
+  			  button{
+  		      font:{
+				      size: 20px;
+				      family: Geometria;
+				      weight: bold;
+		        }
+		        margin: 0px 20px;
+			      background: none;
+			      border: none;
+			      color: #FFE2C9;
+		        text-transform: uppercase;
+            line-height: 1.5em;
+            text-shadow: 2px 0 2px #424242, 
+                         0 1px 1px #DD524E, 
+                         -1px 0 1px #DD524E, 
+                         0 -1px 1px #DD524E;
+  		}
+  	}
+  	&__button:hover{
+  		text-decoration: underline;
+  	}
+
+  		&__code{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      display: none;
+
+  			&__title{
+          font:{
+          	family: Geometria;
+          	size: 40px;
+          	weight: bold;
+          }
+          color: #FFE2C9;
+		      text-transform: uppercase;
+          line-height: 1.5em;
+          text-shadow: 6px 6px 0px rgba(0,0,0,0.2);        
+  			}
+
+  			&__box{
+
+          input{
+           	margin-top: 20px;
+  	   	    width: 100%;
+  	   	    height: 30px;
+  	   	    border:none;
+  	   	    background: none;
+  	      	border-bottom: 2px solid #BE2D29;
+  	   	    padding-left: 10px;
+  	   	    font-size: 15px;
+          }
+  			}
+
+  			&__button{
+  				text-align: center;
+  				margin-top: 20px;
+  			button{
+  				font:{
+				    size: 20px;
+				    family: Geometria;
+				    weight: bold;
+		      }
+		      margin: 0px 20px;
+			    background: none;
+			    border: none;
+			    color: #FFE2C9;
+		      text-transform: uppercase;
+          line-height: 1.5em;
+          text-shadow: 2px 0 2px #424242, 
+                       0 1px 1px #DD524E, 
+                       -1px 0 1px #DD524E, 
+                       0 -1px 1px #DD524E;
+  			}
+  		}
+  		&__button:hover{
+  			text-decoration: underline;
+  		}
+  		}
+}
+
+.modal-body{
+	p{
+		font:{
+			size: 20px;
+			weight: bold;
+		}
+	}
+}

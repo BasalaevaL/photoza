@@ -6,19 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app/css/main.css" type = "text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app/js/some.js"></script>
-
 </head>
 <body class="page">
 	<!--меню-->
 	<div class="fon">
   <header class="menu">
-  <!--	<div class="menu__left">pphotoza@gmail.com</div>-->
   	<div class="menu__right">
-  		<div class="menu__right__link">Найти</div>
-  		<div class="menu__right__link">Зарегистрироваться</div>
-  		<div class="menu__right__link">Войти</div>
+  		<div class="menu__right__link"><a href="search.html">Найти</a></div>
+  		<div class="menu__right__text">pphotoza@gmail.com</div>
+  		<div class="menu__right__text">г.Кострома</div>
+  		<div class="menu__right__link"><a href="personal.html">Личный кабинет</a></div>
+  		<div class="menu__right__link"><a href="login.html">Войти</a></div>
   	</div>
   </header>
    <!-- контент главной страницы (№1)-->
@@ -26,17 +30,20 @@
  	<div class="content-background"></div>
  	 <div class="content-top">
  	 	 <!--<div class="content-top__text">Крутой<br> сервис<br> для<br> cамых<br> важных<br> моментов</div>-->
- 	 	 <div class="content-top__textt" onclick="openBlock(this)">Крутой сервис для cамых важных моментов</div>
-     <div class="content-top__img"><img src="app/image/111.gif"></div>
-     <div class="content-top__imgg"><img src="app/image/vsp.png"></div>
+ 	 	
+ 	 	 <div class="content-top__textt" onclick="openBlock(this)">
+ 	 	 	<span>Крутой сервис для самых важных моментов</span>
+ 	 	 </div>
+   
+     <div class="content-top__img"><img src="app/image/777.gif"></div>
+
+
+     <!--<div class="content-top__imgg"><img src="app/image/vsp.png"></div>-->
  	 </div>
+ 	 
  	 <form class="content-search">
- 	 	  <input type="text" name="search" placeholder="Название города ..." class="content-search__window">
-      <input type="submit" value="Поиск" class="content-search__button">	 
+     <a href="search.html"><input type="submit" value="Найти фотографа" class="content-search__button"></a>
  	 </form>
- 	 <div class="content-bottom">
-			<div class="content-bottom__button">подробнее</div>
- 	 </div>
  </content>
 </div>
 <!--контент страницы №2-->
@@ -44,19 +51,20 @@
 <div class="fon2">
  <div class="content2">
  	 <div class="content2__title">Давайте знакомиться!</div>
+    
  	 <div class="content2-block">
  	 	<div class="content2-block__container">
- 	 	  <div class="content2-block__container__img"><img src="app/image/icons8-группы-пользователей-100.png"></div>
+ 	 	  <div class="content2-block__container__img"><img src="app/image/icons8-группы-пользователей-1002.png"></div>
  	 	  <div class="content2-block__container__title">Кто мы?</div>
  	 	  <div class="content2-block__container__text">Cайт быстрого поиска и подбора фотографов</div>
  	 	</div>
  	 	<div class="content2-block__container">
- 	 	  <div class="content2-block__container__img"><img src="app/image/icons8-цель-100.png"></div>
+ 	 	  <div class="content2-block__container__img"><img src="app/image/icons8-цель-1002.png"></div>
  	 	  <div class="content2-block__container__title">Наша цель</div>
- 	 	  <div class="content2-block__container__text">Помочь Вам быстро подобрать фотографа на любое Ваше событие и мероприятие</div>
+ 	 	  <div class="content2-block__container__text">Поможем Вам быстро подобрать фотографа на любое Ваше событие и мероприятие</div>
  	 	</div>
  	 	<div class="content2-block__container">
- 	 	  <div class="content2-block__container__img"><img src="app/image/icons8-тест-пройден-100.png"></div>
+ 	 	  <div class="content2-block__container__img"><img src="app/image/icons8-тест-пройден-1002.png"></div>
  	 	  <div class="content2-block__container__title">Результат</div>
  	 	  <div class="content2-block__container__text">Просто заходите к нам и Вы все сами увидите</div>
  	 	</div>
@@ -65,28 +73,94 @@
 </div>
 
 <!--контент страницы №3 (карусель фото)-->
+<div class="fon3">
+ <div class="galery">
+ 	<div class="g-img">
+ 			<img src="app/image/galery1/_DSC0111-min.JPG">
+ 			<img src="app/image/galery1/_DSC0077-min.JPG">
+ 			<img src="app/image/galery1/_DSC0122-min.JPG">
+ 			<img src="app/image/galery1/_DSC0135-min.jpg">
+ 			<img src="app/image/galery1/_DSC0181-min.JPG">
+ 			<img src="app/image/galery1/_DSC0215-min.jpg">
+ 			<img src="app/image/galery1/_DSC0245-min.JPG">
+ 			<img src="app/image/galery1/_DSC0251-min.JPG">
+ 			<img src="app/image/galery1/_DSC0269-min.JPG">
+ 			<img src="app/image/galery1/_DSC0299-min.jpg">
+ 			<img src="app/image/galery1/_DSC0443-min.JPG">
+ 			<img src="app/image/galery1/_DSC0487-min.JPG">
+ 			<img src="app/image/galery1/_DSC0588-min.JPG">
+ 			<img src="app/image/galery1/_DSC0634-min.JPG">
+ 			<img src="app/image/galery1/_DSC0692-min.JPG">
+ 			<img src="app/image/galery1/IMG_20180801_183753-min.jpg">
+ 			<img src="app/image/galery1/IMG_20180813_114353-min.jpg">
+ 			<img src="app/image/galery1/IMG_6897-min.JPG">
+ 			<img src="app/image/galery1/IMG_7254-min.JPG">
+ 			<img src="app/image/galery1/_DSC0101-min.JPG">
+ 	</div>
+</div>
+</div>
 
- <div class="content3">
-   <div class="carousel">
-   	<div class="carousel__photo">
-   		<img src="app/image/IMG_1559.jpg">
-   	</div>
-   	<div class="carousel__photo">
-   		<img src="app/image/IMG_7254.JPG">
-   	</div>
-   	<div class="carousel__photo">
-   		<img src="app/image/_DSC0181.JPG">
-   	</div>
-   </div>
- </div>
+<div class="fon5">
+ <div class="search">
+ 	<div class="search__title">Найти фотографа проще чем Вы думаете!</div>
+ 	<form class="search__container">
+    <div class="form-group col-md-4">
+      <label>Выберите округ</label>
+      <select id="inputState" class="form-control">
+       <option selected>Центральный</option>
+       <option>Северо-Западный</option>
+       <option>Южный</option>
+       <option>Северо-Кавказский</option>
+       <option>Приволжский</option>
+       <option>Уральский</option>
+       <option>Сибирский</option>
+       <option>Дальневосточный</option>
+      </select>
+    </div>
 
-
+    <div class="form-group col-md-4">
+      <label>Выберите регион</label>
+      <select id="inputState" class="form-control">
+       <option selected>Костромская область</option>
+       <option>Брянская область</option>
+       <option>Владимирская область</option>
+       <option>Ивановская область</option>
+       <option>Московская область</option>
+      </select>
+    </div>
+    
+    <div class="form-group col-md-4">
+      <label>Выберите город</label>
+      <select id="inputState" class="form-control">
+       <option selected>Кострома</option>
+       <option>Москва</option>
+       <option>Владимир</option>
+       <option>Иваново</option>
+       <option>Брянск</option>
+      </select>
+    </div>
+ 	</form>
+ 	<div class="search__button">
+ 		<button>Поиск</button>
+ 	</div>
+</div>
+</div>
 <!--футер-->
+<div class="fon4">
 <footer class="footer">
 		© 2019 «PHOTOZA»
 </footer>
+</div>
+
+
+<div class="totop">
+	<a href="#top" class="totop-button"><img src="app/image/icons8-slide-up-filled-501.png"></a>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
