@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
 *, *:before, *:after{box-sizing:border-box}
 .page{
-	background: #FFFFFF;
+	background-image: url(/app/image/photo-min.jpg);
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-size: 100% auto;
 	max-width: 1920px;
 	width: 100%;
 	margin-left: auto;
@@ -9,17 +12,20 @@
 	font-family: Geometria;
 }
 .fon{
-	background: #FFB87B; 
+	background: rgba(255, 226, 201,0.3); 
 	background-size: 100% auto;
 	width: 100%;
 	height: 970px;
-	position: relative;
+	background-attachment: fixed;
+	background-size: 100% auto;
 }
 
 .menu{
 	display: flex;
 	padding: 50px 0;
 	justify-content: space-between;
+	z-index: 1;
+	background: #FFB87B;
 
 	&__left{
 		margin-left: 20px;
@@ -70,57 +76,81 @@
 }
 
 .content{
-	padding: 0px 50px;
 	display: flex;
 	flex-direction: column;
 } 
 .content-top{
 	display: flex;
-	align-items: center;
-  justify-content: space-between;
-  height: 700px;
+	flex-direction: column;
+  width: 100%;
+  position: relative;
 
 
 	&__textt{
-		margin: 0px 50px;
+		width: 100%;
+		height: 800px;
+		display: flex;
+    justify-content: flex-start;
     transition: all 1s;
-    text-align: left;
+    background: #FFB87B;
+    padding-left: 90px;
+    padding-top: 70px;
+    word-wrap: break-word;
+    text-align: center;
     span{
       font:{
     	  family: Geometria;
     	  weight: bold; 
-    	  size: 100px;
+    	  size: 90px;
     	  stretch: ultra-condensed;
       }
       text-transform: uppercase;
       line-height: 1.2em;
       transform: rotate(0deg);
-      color: #FFE2C9;
+      color: #FFE2C9; 
       text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-     /* text-shadow: 1px 0 1px #FFE2C9, 
-                 0 1px 1px #FFE2C9, 
-                 -1px 0 1px #FFE2C9, 
-                 0 -1px 1px #FFE2C9;*/
     }
+    background-size:cover;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    shape-margin: 0px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 100%);
 	}
 
 	&__img{
+		position: absolute;
+		top: 50%;
+		right: 0%;
+		width: 100%;
+		display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size:cover;
+    shape-outside: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    shape-margin: 0px;
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
 	img{
 		width: 700px;
 		height: 400px;
+	
 	}
 }
 }
 .content-search{
+	position: absolute;
+	width: 100%;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	margin-top: 50px;
+
+	padding: 25px;
 
 	 &__button{
      padding: 10px 40px;
      background: #BE2D29;
-     border-radius: 2px;
+     border-radius: 30px;
      border: none; 
      cursor: pointer;
      font: {
@@ -137,6 +167,7 @@
 		box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
 	}
 }
+
 .fon2{
 	background-image: url(/app/image/photo-min.jpg);
 	background-attachment: fixed;
@@ -213,8 +244,9 @@
   	&__title:hover{
   		opacity: 1;
   		font:{
-  			family: Arial Black;
+  			family: Geometria;
   			size: 40px;
+  			weight: bold;
   		}
   		color: #BE2D29;
   		margin: 0px 0px;
@@ -231,8 +263,9 @@
   
     &__text{
     	font: {
-    		family: Open Sans Extrabold;
+    		family: Geometria;
     		size: 20px;
+    		weight: bold;
     	}
     	text-align: center;
     	color: #BE2D29;
@@ -253,98 +286,49 @@
 	background-size: 100% auto;
 	width: 100%;
 }
-.galery{
+.gal{
   width: 90%;
-  height: auto;
-  background: #FFE2C9;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px;
-}
-.g-img{
+  height: 100%;
+  background: rgba(255, 226, 201,0.3);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-   img{
-	  width: auto;
-	  height: 220px;
-	  margin: 5px;	
-   }
- 	}
-
-.fon5{
-	background-image: url(/app/image/photo-min.jpg);
-	background-attachment: fixed;
-	background-size: 100% auto;
-	width: 100%;
-	height: auto;
-	padding: 50px 0px;
-}
-.search{
-	width: 60%;
-  height: auto;
-  background: rgba(255, 226, 201,1);
-  border-radius: 3px;
- // box-shadow: 0 0 20px 5px rgba(0,0,0,0.5);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+  margin-bottom: 20px;
 
-  &__title{
-  	font: {
-  		family: Geometria;
-			size: 40px;
-			weight: bold;
-		}
-		text-transform: uppercase;
-		text-align: center;
-		color: rgb(190, 45, 41);
-	  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-	  margin: 20px 0px;
-  }
-
-  &__container{
-
-  	label{
+   &__more{
+  	margin: 30px auto;
+  	border: none;
+  	background: #BE2D29;
+  	border-radius: 30px;
+  	padding: 5px 15px;
+  	cursor: pointer;
+  	span{
   		font:{
   			family: Geometria;
-  			size: 25px;
+  			size: 20px;
+  			weight: bold;
   		}
-  		color: rgb(190, 45, 41);
+  		color: #FFE2C9;
   	}
   }
-
-  &__button{
-   display: flex;
-   justify-content: center;
-   margin-top: 10px;
-
-   button{
-   	background: rgb(190, 45, 41);
-   	border: none;
-   	border-radius: 2px;
-   	padding: 5px 20px;
-   	font:{
-   		family: Geometria;
-   		size: 20px;
-   		weight: bold;
-   	} 
-   	color: #FFE2C9;
-   	text-transform: uppercase;
-   }
-  
-  button:hover{
-  	box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
-  }
 }
+	.gallery img{
+	 width: auto;
+	 height: 200px;
+   margin:2px; /* внешние отступы картинок */
+   border:0px solid #FFE2C9; /* рамка картинок */
+}
+a.photo:hover img{
+ -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 .fon4{
 	background-image: url(/app/image/photo-min.jpg);
+	background: #FFB87B;
 	background-attachment: fixed;
 	background-size: 100% auto;
 	width: 100%;
@@ -362,7 +346,8 @@
 		size: 20px;
 		weight: bold; 
 	}
-		color: #FFE2C9;
+		color: #FFE2C9; 
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
 }
 
 .menu__right__link a:visited{
@@ -380,4 +365,20 @@
 .menu__right__link a:hover{
 	text-decoration: none;
   color: #BE2D29 !important; /* Цвет ссылок */
+}
+.gal__more a:visited{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.gal__more a:active{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.gal__more a{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.gal__more a:hover{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
 }

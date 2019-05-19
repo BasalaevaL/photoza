@@ -1,0 +1,40 @@
+.account-page{
+	background-image: url(/app/image/photo-min.jpg);
+	background-attachment: fixed;
+	background-size: 100% auto;
+	width: 100%;
+}
+.account{
+	width: 90%;
+	height: 800px;
+	background: rgba(255,255,255,0.5);
+	margin: 0px auto;
+}
+.account-title{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+	span{
+		font:{
+			family: Geometria;
+			size: 30px;
+			weight: bold;
+		}
+	}
+}
+.account-menu{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+
+	&__link{
+		margin: 0px 20px;
+		span{
+			font:{
+				family: Geometria;
+				size: 20px;
+			}
+		}
+
+	}
+}

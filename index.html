@@ -11,7 +11,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   <script src="app/js/some.js"></script>
+
+<script type="text/javascript" src="app/libs/scripts/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="app/libs/scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="app/libs/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="app/libs/scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
 </head>
 <body class="page">
 	<!--меню-->
@@ -21,24 +32,34 @@
   		<div class="menu__right__link"><a href="search.html">Найти</a></div>
   		<div class="menu__right__text">pphotoza@gmail.com</div>
   		<div class="menu__right__text">г.Кострома</div>
-  		<div class="menu__right__link"><a href="personal.html">Личный кабинет</a></div>
+  		<div class="menu__right__link"><a href="personal.html">Страница фотографа</a></div>
   		<div class="menu__right__link"><a href="login.html">Войти</a></div>
+  		<div class="menu__right__link"><a href="account.html">Личный кабинет</a></div>
+  		<div class="menu__right__link"><a href="chat.html">Чат с фотографом</a></div>
+  		<div class="menu__right__link"><a href="error.html">Ошибка</a></div>
+  		<div class="menu__right__link"><a href="gallery.html">Галерея</a></div>
   	</div>
   </header>
    <!-- контент главной страницы (№1)-->
  <content class="content">
- 	<div class="content-background"></div>
  	 <div class="content-top">
- 	 	 <!--<div class="content-top__text">Крутой<br> сервис<br> для<br> cамых<br> важных<br> моментов</div>-->
- 	 	
- 	 	 <div class="content-top__textt" onclick="openBlock(this)">
- 	 	 	<span>Крутой сервис для самых важных моментов</span>
- 	 	 </div>
-   
+
+    <div class="content-top__textt" onclick="openBlock(this)">
+ 	 	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <span>Крутой сервис <br>для самых <br>важных <br>моментов</span>
+          </div>
+        <div class="carousel-item">
+            <span>Найти фотографа <br>проще <br>чем Вы думаете!</span>
+        </div>
+        <div class="carousel-item">
+            <span>Остались вопросы? <br>Пиши сюда <br>pphotoza@gmail.com</span>
+        </div>
+      </div>
+    </div>
+</div>
      <div class="content-top__img"><img src="app/image/777.gif"></div>
-
-
-     <!--<div class="content-top__imgg"><img src="app/image/vsp.png"></div>-->
  	 </div>
  	 
  	 <form class="content-search">
@@ -74,75 +95,27 @@
 
 <!--контент страницы №3 (карусель фото)-->
 <div class="fon3">
- <div class="galery">
- 	<div class="g-img">
- 			<img src="app/image/galery1/_DSC0111-min.JPG">
- 			<img src="app/image/galery1/_DSC0077-min.JPG">
- 			<img src="app/image/galery1/_DSC0122-min.JPG">
- 			<img src="app/image/galery1/_DSC0135-min.jpg">
- 			<img src="app/image/galery1/_DSC0181-min.JPG">
- 			<img src="app/image/galery1/_DSC0215-min.jpg">
- 			<img src="app/image/galery1/_DSC0245-min.JPG">
- 			<img src="app/image/galery1/_DSC0251-min.JPG">
- 			<img src="app/image/galery1/_DSC0269-min.JPG">
- 			<img src="app/image/galery1/_DSC0299-min.jpg">
- 			<img src="app/image/galery1/_DSC0443-min.JPG">
- 			<img src="app/image/galery1/_DSC0487-min.JPG">
- 			<img src="app/image/galery1/_DSC0588-min.JPG">
- 			<img src="app/image/galery1/_DSC0634-min.JPG">
- 			<img src="app/image/galery1/_DSC0692-min.JPG">
- 			<img src="app/image/galery1/IMG_20180801_183753-min.jpg">
- 			<img src="app/image/galery1/IMG_20180813_114353-min.jpg">
- 			<img src="app/image/galery1/IMG_6897-min.JPG">
- 			<img src="app/image/galery1/IMG_7254-min.JPG">
- 			<img src="app/image/galery1/_DSC0101-min.JPG">
- 	</div>
+ <div class="gal">
+ 	<div class="gallery">
+ <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_20180801_183753-min.jpg" title="Картинка"><img src="app/image/galery1/small/IMG_20180801_183753-min.jpg" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_20180813_114353-min.jpg" title="Картинка 2"><img src="app/image/galery1/small/IMG_20180813_114353-min.jpg" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_6897-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/IMG_6897-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_7254-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/IMG_7254-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0077-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0077-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0101-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0101-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0111-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0111-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0119-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0119-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0122-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0122-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0135-min.jpg" title="Картинка 2"><img src="app/image/galery1/small/_DSC0135-min.jpg" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0181-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0181-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0215-min.jpg" title="Картинка 2"><img src="app/image/galery1/small/_DSC0215-min.jpg" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0245-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0245-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0251-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0251-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0269-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0269-min.JPG" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0299-min.jpg" title="Картинка 2"><img src="app/image/galery1/small/_DSC0299-min.jpg" alt="" /></a>
+ <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0443-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0443-min.JPG" alt="" /></a>
 </div>
-</div>
-
-<div class="fon5">
- <div class="search">
- 	<div class="search__title">Найти фотографа проще чем Вы думаете!</div>
- 	<form class="search__container">
-    <div class="form-group col-md-4">
-      <label>Выберите округ</label>
-      <select id="inputState" class="form-control">
-       <option selected>Центральный</option>
-       <option>Северо-Западный</option>
-       <option>Южный</option>
-       <option>Северо-Кавказский</option>
-       <option>Приволжский</option>
-       <option>Уральский</option>
-       <option>Сибирский</option>
-       <option>Дальневосточный</option>
-      </select>
-    </div>
-
-    <div class="form-group col-md-4">
-      <label>Выберите регион</label>
-      <select id="inputState" class="form-control">
-       <option selected>Костромская область</option>
-       <option>Брянская область</option>
-       <option>Владимирская область</option>
-       <option>Ивановская область</option>
-       <option>Московская область</option>
-      </select>
-    </div>
-    
-    <div class="form-group col-md-4">
-      <label>Выберите город</label>
-      <select id="inputState" class="form-control">
-       <option selected>Кострома</option>
-       <option>Москва</option>
-       <option>Владимир</option>
-       <option>Иваново</option>
-       <option>Брянск</option>
-      </select>
-    </div>
- 	</form>
- 	<div class="search__button">
- 		<button>Поиск</button>
- 	</div>
+<button class="gal__more"><span><a href="gallery.html">Показать еще</a></span></button>
 </div>
 </div>
 <!--футер-->
@@ -156,11 +129,6 @@
 <div class="totop">
 	<a href="#top" class="totop-button"><img src="app/image/icons8-slide-up-filled-501.png"></a>
 </div>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

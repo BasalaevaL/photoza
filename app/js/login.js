@@ -30,18 +30,6 @@ $(function(){
 
 
 $(function(){
-    $('.otpr').click(function () {
-      $('.modal').show();
-    });
-
-    $('.btn-mod').click(function () {
-      $('.modal').modal('toggle');
-       $('.login').hide();
-       $('.form').hide();
-    });
-});
-
-$(function(){
     $('.eml-otpr').click(function () {
       $('.form-password__code').show();
     });

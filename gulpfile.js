@@ -26,7 +26,9 @@ const cssFiles=[
     './app/css/scroll.css',
     './app/css/chat.css',
     './app/css/search.css',
-    './app/css/error.css'
+    './app/css/error.css',
+    './app/css/gallery.css',
+    './app/css/account.css'
 ];
 function styles() {
     return gulp.src(cssFiles)

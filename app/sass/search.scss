@@ -1,55 +1,90 @@
 .page-search{
+	background-attachment: fixed;
+	background-size: 100% auto;
 	width: 100%;
 	height: 100%;
-	background: #FFB87B;
+	background-image: url(/app/image/photo-min.jpg);
+}
+.search-fon{
+	background: rgba(255, 255, 255,0.5);
+	border-radius: 3px;
+	width: 92%;
+	margin: 0px auto;
 }
 .search-photographer{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-
-	&__title{
-		text-align: center;
-		font:{
-			size: 50px;
-			family: Geometria;
-			weight: bold;
-		}
-		color: #FFE2C9;
-		text-transform: uppercase;
-    line-height: 1.5em;
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-	}
 }
-.search-box{
+
+.box-title{
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
-	margin: 30px 0px;
-	
-	.btn{
-		background: #BE2D29;
-		border: none;
-		font:{
-			family: Geometria;
-			size: 20px;
+	margin-top: 20px;
+	align-items: center;
+
+  .title{
+  	font: {
+  		family: Geometria;
+			size: 40px;
 			weight: bold;
 		}
-		color: #FFE2C9;
-	}
-	.btn:hover{
-		background: red;
-	}
+		text-transform: uppercase;
+		text-align: center;
+		color: rgb(190, 45, 41);
+	  margin: 0px 20px;
+	  line-height: 1.5em;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  }
+}
+.search{
+	width: 60%;
+  height: auto;
+  background: none;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-	.card{
-		input{
-			width: 500px;
-			font-size: 20px;
-		}
-	}
-	.city{
-		margin-left: auto;
-		width: 100px;
-	}
+
+  &__container{
+
+  	label{
+  		font:{
+  			family: Geometria;
+  			size: 20px;
+  		}
+  		color: #BE2D29;
+  	}
+  }
+
+  &__button{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+
+   button{
+   	background: rgb(190, 45, 41);
+   	border: none;
+   	border-radius: 2px;
+   	padding: 5px 20px;
+   	font:{
+   		family: Geometria;
+   		size: 20px;
+   		weight: bold;
+   	} 
+   	color: #fff;
+   	text-transform: uppercase;
+   }
+  
+  button:hover{
+  	box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+  }
+}
 }
 .photographer-list{
 	display: flex;
@@ -75,21 +110,24 @@
 		}
 	}
 	.photo img:hover{
-		width: 210px;
-		height: 210px;
-		border-radius: 50%;
+		-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
 	}
-	.infa{
+	.information{
 		display: none;
 		z-index: 1;
+		background: #fff;
+		margin: 0px 2px;
+		border-radius: 3px;
 		
    .name{
    	display: flex;
    	justify-content: center;
    	font:{
    		family: Geometria;
-   		size: 30px;
-   		weight: bold; 
+   		size: 20px;
    	}
    	color: #BE2D29;
    	text-shadow: 6px 6px 6px rgba(0,0,0,0.2);
@@ -99,37 +137,9 @@
    	justify-content: center;
    	font:{
    		family: Geometria;
-   		size: 20px;
-   		weight: bold;
+   		size: 15px;
    	}
-   	color: #FFE2C9;
-   }
-   .work{
-   	display: flex;
-   	justify-content: center;
-   	flex-wrap: wrap;
-   	width: 400px;
-   	img{
-   		width: 140px;
-   		height: 100%;
-   		padding: 5px;
-   	}
-   }
-   .link-personal{
-   	display: flex;
-   	justify-content: center;
-   	margin: 10px 0px;
-    font:{
-    	family: Geometria;
-    	size: 15px;
-    	weight: bold;
-    }
-    color: #BE2D29;
-    cursor: pointer;
-   }
-   .link-personal:hover{
-   	text-decoration: underline;
-   	font-size: 17px;
+   	color: #BE2D29;
    }
 	}
 }

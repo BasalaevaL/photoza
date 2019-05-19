@@ -10,7 +10,7 @@ function openBlock(el) {
 
 		// если имя класса текущего элемента равно this_block_is_hidden,
 		// то выполнить ниже следующие инструкции
-		if (child && child.className == "infa") {
+		if (child && child.className == "information") {
 
 			// если блок не виден, то показать его
 			if (child.style.display != 'block') {

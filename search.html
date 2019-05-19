@@ -24,229 +24,200 @@
       <div class="menu__right__link"><a href="login.html">Войти</a></div>
     </div>
   </header>
-
+  <div class="search-fon">
   <div class="search-photographer">
-    <div class="search-photographer__title">Фотографы</div>
-    <div class="search-box">
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-       Найди фотографа в своем городе!
-      </button>
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-         <input type="text" name="city" placeholder="Ваш город...">
-         <button class="city">Найти</button>
-        </div>
-      </div>
+    <div class="box-title">
+      <div class="back"><a href="index.html"><img src="app/image/icons8-back-arrow-501.png"></a></div>
+      <div class="title">Найти фотографа</div>
+    </div>
+ <div class="search">
+  <form class="search__container">
+    <div class="form-group col-md-4">
+      <label>Выберите округ</label>
+      <select id="inputState" class="form-control">
+       <option selected>Центральный</option>
+       <option>Северо-Западный</option>
+       <option>Южный</option>
+       <option>Северо-Кавказский</option>
+       <option>Приволжский</option>
+       <option>Уральский</option>
+       <option>Сибирский</option>
+       <option>Дальневосточный</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label>Выберите регион</label>
+      <select id="inputState" class="form-control">
+       <option selected>Костромская область</option>
+       <option>Брянская область</option>
+       <option>Владимирская область</option>
+       <option>Ивановская область</option>
+       <option>Московская область</option>
+      </select>
     </div>
     
+    <div class="form-group col-md-4">
+      <label>Выберите город</label>
+      <select id="inputState" class="form-control">
+       <option selected>Кострома</option>
+       <option>Москва</option>
+       <option>Владимир</option>
+       <option>Иваново</option>
+       <option>Брянск</option>
+      </select>
+    </div>
+  </form>
+  <div class="search__button">
+    <button>Поиск</button>
+  </div>
+</div>
+</div>
+
     <div class="photographer-list">
-
         <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/70Q4_MP_zfA.jpg">
-      </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
+            <div class="photo" onclick="openBlock(this)">
+              <img src="app/image/70Q4_MP_zfA.jpg">
+            </div>
+            <div class="information">
+              <a href="personal.html">
+              <div class="name">Басалаева Лия</div>
+              <div class="city">г.Кострома</div>
+            </a>
+            </div>   
+        </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">На страницу фотографа...</div>
-      </div>   
-    </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Басалаева Лия</div>
+          <div class="city">Кострома</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
-       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+      <div class="box-photographer">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
-       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+      <div class="box-photographer">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
-      </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
 
-       <div class="box-photographer">
-      <div class="photo" onclick="openBlock(this)">
-        <img src="app/image/403909.jpg">
+      <div class="box-photographer">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="infa">
-      <div class="name">Басалаева Лия</div>
-      <div class="city">Кострома</div>
-     <div class="work">
-        <img src="app/image/galery/_DSC0111.JPG">
-        <img src="app/image/galery/_DSC0692.JPG">
-        <img src="app/image/galery/_DSC0181.JPG">
-        <img src="app/image/galery/_DSC0443.JPG">
+
+      <div class="box-photographer">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
       </div>
-      <div class="link-personal">Перейти на страницу фотографа...</div>
-      </div>   
-    </div>
+      <div class="box-photographer">
+        <div class="photo" onclick="openBlock(this)">
+          <img src="app/image/403909.jpg">
+        </div>
+        <div class="information">
+          <div class="name">Фамилия Имя</div>
+          <div class="city">Город</div>
+        </div>   
+      </div> 
 
     </div>
   </div>
-  
+</div>
 </body>
 </html>

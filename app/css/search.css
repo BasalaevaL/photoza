@@ -1,7 +1,16 @@
 .page-search {
+  background-attachment: fixed;
+  background-size: 100% auto;
   width: 100%;
   height: 100%;
-  background: #FFB87B;
+  background-image: url(/app/image/photo-min.jpg);
+}
+
+.search-fon {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  width: 92%;
+  margin: 0px auto;
 }
 
 .search-photographer {
@@ -10,44 +19,65 @@
   width: 100%;
 }
 
-.search-photographer__title {
-  text-align: center;
-  font-size: 50px;
+.box-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.box-title .title {
   font-family: Geometria;
+  font-size: 40px;
   font-weight: bold;
-  color: #FFE2C9;
   text-transform: uppercase;
+  text-align: center;
+  color: #be2d29;
+  margin: 0px 20px;
   line-height: 1.5em;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
-.search-box {
+.search {
+  width: 60%;
+  height: auto;
+  background: none;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  margin: 30px 0px;
+  flex-direction: column;
 }
 
-.search-box .btn {
-  background: #BE2D29;
+.search__container label {
+  font-family: Geometria;
+  font-size: 20px;
+  color: #BE2D29;
+}
+
+.search__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.search__button button {
+  background: #be2d29;
   border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
   font-family: Geometria;
   font-size: 20px;
   font-weight: bold;
-  color: #FFE2C9;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.search-box .btn:hover {
-  background: red;
-}
-
-.search-box .card input {
-  width: 500px;
-  font-size: 20px;
-}
-
-.search-box .city {
-  margin-left: auto;
-  width: 100px;
+.search__button button:hover {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .photographer-list {
@@ -77,60 +107,33 @@
 }
 
 .box-photographer .photo img:hover {
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
-.box-photographer .infa {
+.box-photographer .information {
   display: none;
   z-index: 1;
+  background: #fff;
+  margin: 0px 2px;
+  border-radius: 3px;
 }
 
-.box-photographer .infa .name {
-  display: flex;
-  justify-content: center;
-  font-family: Geometria;
-  font-size: 30px;
-  font-weight: bold;
-  color: #BE2D29;
-  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
-}
-
-.box-photographer .infa .city {
+.box-photographer .information .name {
   display: flex;
   justify-content: center;
   font-family: Geometria;
   font-size: 20px;
-  font-weight: bold;
-  color: #FFE2C9;
+  color: #BE2D29;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
-.box-photographer .infa .work {
+.box-photographer .information .city {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 400px;
-}
-
-.box-photographer .infa .work img {
-  width: 140px;
-  height: 100%;
-  padding: 5px;
-}
-
-.box-photographer .infa .link-personal {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0px;
   font-family: Geometria;
   font-size: 15px;
-  font-weight: bold;
   color: #BE2D29;
-  cursor: pointer;
-}
-
-.box-photographer .infa .link-personal:hover {
-  text-decoration: underline;
-  font-size: 17px;
 }
