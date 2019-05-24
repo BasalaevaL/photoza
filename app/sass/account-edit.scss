@@ -1,0 +1,121 @@
+.page-edit{
+	background-image: url(/app/image/photo-min.jpg);
+	background-attachment: fixed;
+	background-size: 100% auto;
+	width: 100%;
+}
+.account-edit{
+	width: 90%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	margin: 20px auto;
+	font:{
+					family: Geomtria;
+					size: 25px;
+				}
+}
+.account-edit-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+	span{
+		font:{
+			family: Geometria;
+			weight: bold;
+			size: 50px;
+		}
+		color: #FFE2C9;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0px 20px;
+    line-height: 1.5em;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	}
+}
+.information{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
+
+	.photo{
+		position: relative;
+		img{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+		}
+		.transform{
+			display: none;
+			cursor: pointer;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90px;
+      height: 90px;
+      border-radius: 0px;
+		}
+	}
+	.about-me{
+		margin-left: 30px;
+		width: 50%;
+
+		&__name{
+			margin-bottom: 10px;
+			input{
+				width: 90%;
+				height: 50px;
+			}
+		}
+		&__city{
+			margin-bottom: 10px;
+			input{
+				width: 90%;
+				height: 50px;
+			}
+		}
+		&__style{
+			margin-bottom: 10px;
+			textarea{
+				width: 90%;
+				height: 100px;
+			}
+		}
+		&__about-me{
+			margin-bottom: 10px;
+			textarea{
+				width: 90%;
+				height: 100px;
+			}
+		}
+		&__cost{
+			input{
+				width: 90%;
+				height: 50px;
+			}
+		}
+	}
+}
+.edit{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	button{
+		background: #BE2D29;
+		border: none;
+		border-radius: 30px;
+		padding: 10px 20px;
+		span{
+			font:{
+				family: Geometria;
+				size: 30px;
+			}
+			color: #FFE2C9;
+		}
+	}
+}

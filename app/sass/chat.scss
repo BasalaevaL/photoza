@@ -3,36 +3,45 @@
 	background-attachment: fixed;
 	background-size: 100% auto;
 	width: 100%;
+	overflow-x: hidden;
 }
 .close{
 	position: absolute;
-	right: 5px;
+	right: 10%;
 	top: 5px;
-	img{
-		width: 25px;
-		height: 25px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	
+	.dialog{
+			width: 25px;
+			height: 25px;
+			margin-right: 10px;
 	}
+
+	.close-chat{
+			width: 25px;
+			height: 25px;
+	}
+
 }
 
 .chat-head{
 	display: flex;
 	justify-content: center;
 	position: fixed;
+	width: 100%;
 	top: 0;
 	left: 50%;
 	transform: translate(-50%,-0%);
 	z-index: 1;
-	span{
-		font:{
-			size: 40px;
-			family: Geometria;
-			weight: bold;
-		}
-	}
+
+
 	&__container{
-		width: 1000px;
+		width: 80%;
 		height: 100%;
-		background: rgba(190, 45, 41,0.7);
+		background: rgba(255, 184, 123,1);
+		border-radius: 2px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -55,7 +64,7 @@
 					size: 30px;
 					weight: bold;
 				}
-				color: #FFE2C9;
+				color: #000000;
 			}
 			&__city-foto{
 				margin-top: 10px;
@@ -63,45 +72,39 @@
 					family: Geometria;
 					size: 15px;
 				}
-				color: #FFA3A1;
+				color: #000000;
 			}
 		}
 	}
 }
 .chat-box{
 	display: flex;
+	flex-flow: column-reverse;
 	margin-left: auto;
 	margin-right: auto;
-	background: rgba(0, 0, 0,0.5);
-	width: 1000px;
+	background: rgba(255,255,255,0.2);
+	width: 80%;
 	height: 1000px;
-	position: relative;
-	margin-top: 110px;
-	margin-bottom: 100px;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+	.message-client{
+		margin-top: 30px;
+		width: 100%;
+		height: 100px;
 
-	&__photographer{
-		position: absolute;
-		top: 20%;
-		left: 2%;
-		display: flex;
-		flex-direction: row;
-		
 
-		.foto{
-			img{
-				width: 100px;
-				height: 100px;
-				border-radius: 50%;
-			}
-		}
 		.container{
-			width: 500px;
+			width: 700px;
 		  height: 100px;
 		  background: white;
-		  margin-left: 10px;
+		  float: right;
 		  display: flex;
 		  flex-direction: column;
+		  border-radius: 10px;
+		  margin-right: 30px;
 		}
+
 		.container-inf{
 			display: flex;
 
@@ -121,30 +124,30 @@
 		}
 	}
 
-	&__customer{
-		position: absolute;
-		top: 5%;
-		right: 2%;
-		display: flex;
-		flex-direction: row;
+	.message-photographer{
+		margin-top: 50px;
+		width: 100%;
 
-
-		.foto{
-			order: 1;
-			margin-left: 10px;
-			img{
-				width: 100px;
-				height: 100px;
-				border-radius: 50%;
-			}
-		}
 		.container{
-			width: 500px;
+			width: 700px;
 		  height: 100px;
-		  background: #FFA3A1;
-		  margin-left: 10px;
+		  background: #FFE2C9;
+		  float: left;
+		  margin-left: 30px;
 		  display: flex;
 		  flex-direction: column;
+		  border-radius: 10px;
+		}
+		.container:before{
+			content: "";
+      width: 0;
+      height: 0;
+      left: 100%;
+      top: 38px;
+      position: absolute;
+      border-top: 13px solid transparent;
+      border-left: 26px solid #FFE2C9;
+      border-bottom: 13px solid transparent;
 		}
 		.container-inf{
 			display: flex;
@@ -164,11 +167,11 @@
 			margin-top: 10px;
 		}
 	}
-}
+
 .chat-message{
 	position: fixed;
 	bottom: 0px;
-	width: 1000px;
+	width: 80%;
 	height: 100px;
 	background: white;
   left: 50%;
@@ -181,20 +184,21 @@
   	justify-content: center;
   }
   textarea{
-  	width: 800px;
+  	width: 90%;
   	height: 90px;
   	margin: 5px;
   }
   &__button{
   	font-size: 15px;
   	font-family: Geometria;
+  	font-weight: bold;
   	padding: 10px;
-  	background: rgba(190, 45, 41,0.7);
+  	background: rgba(255, 184, 123,1);
   	border: none;
   	border-radius: 5px;
   	margin-left: 10px;
   	cursor: pointer;
-    color: #FFE2C9;
+    color: #000;
   }
 
 }

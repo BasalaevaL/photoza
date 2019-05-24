@@ -5,11 +5,14 @@
 	height: 100%;
 	background-image: url(/app/image/photo-min.jpg);
 }
+.menu{
+	background: rgb(255, 184, 123);
+}
 .search-fon{
-	background: rgba(255, 255, 255,0.5);
+	background: rgba(255, 184, 123,0.9);
 	border-radius: 3px;
 	width: 92%;
-	margin: 0px auto;
+	margin: 20px auto;
 }
 .search-photographer{
 	display: flex;
@@ -25,16 +28,16 @@
 	align-items: center;
 
   .title{
-  	font: {
-  		family: Geometria;
-			size: 40px;
+		font:{
+			family: Geometria;
 			weight: bold;
+			size: 50px;
 		}
+		color: #FFE2C9;
 		text-transform: uppercase;
 		text-align: center;
-		color: rgb(190, 45, 41);
-	  margin: 0px 20px;
-	  line-height: 1.5em;
+		margin: 0px 20px;
+    line-height: 1.5em;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
   }
 }
@@ -42,7 +45,7 @@
 	width: 60%;
   height: auto;
   background: none;
-  border-radius: 3px;
+  border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -70,7 +73,7 @@
    button{
    	background: rgb(190, 45, 41);
    	border: none;
-   	border-radius: 2px;
+   	border-radius: 30px;
    	padding: 5px 20px;
    	font:{
    		family: Geometria;
@@ -82,7 +85,10 @@
    }
   
   button:hover{
-  	box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+  	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
   }
 }
 }
@@ -91,40 +97,47 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	height: 100%;
+	padding: 30px 0px;
+}
+.box-photographer:hover{
+	-webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .box-photographer{
 	display: flex;
 	flex-direction: column;
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
+	margin: 20px 30px;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
 
 
 	.photo{
 		display: flex;
 		justify-content: center;
-		margin: 20px;
 		cursor: pointer;
 		img{
-			width: 200px;
-			height: 200px;
+			width: 300px;
+			height: 300px;
 			border-radius: 50%;
-			box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
 		}
 	}
-	.photo img:hover{
-		-webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    cursor: pointer;
-	}
+
 	.information{
-		display: none;
 		z-index: 1;
 		background: #fff;
-		margin: 0px 2px;
+		margin: 0px 5px;
 		border-radius: 3px;
+		padding: 10px;
+		position: absolute;
+		top:70%;
+		left: 12%;
 		
-   .name{
-   	display: flex;
-   	justify-content: center;
+   .name{   	
    	font:{
    		family: Geometria;
    		size: 20px;
@@ -133,8 +146,13 @@
    	text-shadow: 6px 6px 6px rgba(0,0,0,0.2);
    }
    .city{
-   	display: flex;
-   	justify-content: center;
+   	font:{
+   		family: Geometria;
+   		size: 15px;
+   	}
+   	color: #BE2D29;
+   }
+   .cost{
    	font:{
    		family: Geometria;
    		size: 15px;
@@ -142,4 +160,25 @@
    	color: #BE2D29;
    }
 	}
+}
+
+.footer{
+  margin-top: 20px;
+	background: rgb(255, 184, 123);
+}
+.information a:visited{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.information a:active{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.information a{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
+}
+.information a:hover{
+	text-decoration: none;
+  color: #FFE2C9 !important; /* Цвет ссылок */
 }

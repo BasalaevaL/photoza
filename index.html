@@ -5,46 +5,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="app/css/scroll.css" type = "text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="app/libs/scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
 
   <script src="app/js/some.js"></script>
 
-<script type="text/javascript" src="app/libs/scripts/jquery-1.4.3.min.js"></script>
-<script type="text/javascript" src="app/libs/scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-<script type="text/javascript" src="app/libs/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="app/libs/scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  
+ 
 
 </head>
 <body class="page">
 	<!--меню-->
 	<div class="fon">
   <header class="menu">
-  	<div class="menu__right">
+  	<input type="checkbox" id="check-menu">
+  	<label for="check-menu" class="label-menu"></label>
+  	<div class="burger-line first"></div>
+  	<div class="burger-line second"></div>
+  	<div class="burger-line third"></div>
+  	<div class="burger-line fourth"></div>
+  	<div class="enter"><a href="login.html"><img src="app/image/icons8-customer-30.png"></a></div>
+
+    <div class="menu__right">
   		<div class="menu__right__link"><a href="search.html">Найти</a></div>
-  		<div class="menu__right__text">pphotoza@gmail.com</div>
-  		<div class="menu__right__text">г.Кострома</div>
   		<div class="menu__right__link"><a href="personal.html">Страница фотографа</a></div>
   		<div class="menu__right__link"><a href="login.html">Войти</a></div>
-  		<div class="menu__right__link"><a href="account.html">Личный кабинет</a></div>
   		<div class="menu__right__link"><a href="chat.html">Чат с фотографом</a></div>
   		<div class="menu__right__link"><a href="error.html">Ошибка</a></div>
   		<div class="menu__right__link"><a href="gallery.html">Галерея</a></div>
   	</div>
   </header>
+
+
    <!-- контент главной страницы (№1)-->
  <content class="content">
  	 <div class="content-top">
 
-    <div class="content-top__textt" onclick="openBlock(this)">
+    <div class="content-top__textt">
  	 	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -59,12 +60,13 @@
       </div>
     </div>
 </div>
-     <div class="content-top__img"><img src="app/image/777.gif"></div>
+     <div class="content-top__img"><img src="app/image/7772.gif"></div>
+
+      <form class="content-search">
+        <a href="search.html"><input type="submit" value="Найти фотографа" class="content-search__button"></a>
+ 	    </form>
  	 </div>
- 	 
- 	 <form class="content-search">
-     <a href="search.html"><input type="submit" value="Найти фотографа" class="content-search__button"></a>
- 	 </form>
+ 
  </content>
 </div>
 <!--контент страницы №2-->
@@ -97,14 +99,14 @@
 <div class="fon3">
  <div class="gal">
  	<div class="gallery">
- <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_20180801_183753-min.jpg" title="Картинка"><img src="app/image/galery1/small/IMG_20180801_183753-min.jpg" alt="" /></a>
- <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_20180813_114353-min.jpg" title="Картинка 2"><img src="app/image/galery1/small/IMG_20180813_114353-min.jpg" alt="" /></a>
+  <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0077-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0077-min.JPG" alt="" /></a>
+  <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0119-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0119-min.JPG" alt="" /></a>
  <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_6897-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/IMG_6897-min.JPG" alt="" /></a>
  <a rel="gallery" class="photo" href="app/image/galery1/big/IMG_7254-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/IMG_7254-min.JPG" alt="" /></a>
- <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0077-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0077-min.JPG" alt="" /></a>
+
  <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0101-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0101-min.JPG" alt="" /></a>
  <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0111-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0111-min.JPG" alt="" /></a>
- <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0119-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0119-min.JPG" alt="" /></a>
+ 
  <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0122-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0122-min.JPG" alt="" /></a>
  <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0135-min.jpg" title="Картинка 2"><img src="app/image/galery1/small/_DSC0135-min.jpg" alt="" /></a>
  <a rel="gallery" class="photo" href="app/image/galery1/big/_DSC0181-min.JPG" title="Картинка 2"><img src="app/image/galery1/small/_DSC0181-min.JPG" alt="" /></a>
@@ -129,6 +131,13 @@
 <div class="totop">
 	<a href="#top" class="totop-button"><img src="app/image/icons8-slide-up-filled-501.png"></a>
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+<script type="text/javascript" src="app/libs/scripts/jquery-1.4.3.min.js"></script>
+  <script type="text/javascript" src="app/libs/scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="app/libs/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 </body>
 </html>

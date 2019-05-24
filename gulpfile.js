@@ -14,7 +14,8 @@ const jsFiles=[
     './app/js/some.js',
     './app/js/login.js',
     './app/js/personal.js',
-    './app/js/search.js'
+    './app/js/search.js',
+    './app/js/account.js'
      
 ];
 
@@ -28,7 +29,9 @@ const cssFiles=[
     './app/css/search.css',
     './app/css/error.css',
     './app/css/gallery.css',
-    './app/css/account.css'
+    './app/css/account.css',
+    './app/css/account-edit.css',
+    './app/css/dialog.css'
 ];
 function styles() {
     return gulp.src(cssFiles)

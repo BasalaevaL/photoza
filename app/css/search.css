@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page-search {
   background-attachment: fixed;
   background-size: 100% auto;
@@ -6,11 +7,15 @@
   background-image: url(/app/image/photo-min.jpg);
 }
 
+.menu {
+  background: #ffb87b;
+}
+
 .search-fon {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 184, 123, 0.9);
   border-radius: 3px;
   width: 92%;
-  margin: 0px auto;
+  margin: 20px auto;
 }
 
 .search-photographer {
@@ -29,11 +34,11 @@
 
 .box-title .title {
   font-family: Geometria;
-  font-size: 40px;
   font-weight: bold;
+  font-size: 50px;
+  color: #FFE2C9;
   text-transform: uppercase;
   text-align: center;
-  color: #be2d29;
   margin: 0px 20px;
   line-height: 1.5em;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
@@ -43,7 +48,7 @@
   width: 60%;
   height: auto;
   background: none;
-  border-radius: 3px;
+  border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -67,7 +72,7 @@
 .search__button button {
   background: #be2d29;
   border: none;
-  border-radius: 2px;
+  border-radius: 30px;
   padding: 5px 20px;
   font-family: Geometria;
   font-size: 20px;
@@ -77,7 +82,10 @@
 }
 
 .search__button button:hover {
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .photographer-list {
@@ -85,45 +93,51 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
+  padding: 30px 0px;
 }
 
-.box-photographer {
-  display: flex;
-  flex-direction: column;
-}
-
-.box-photographer .photo {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  cursor: pointer;
-}
-
-.box-photographer .photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-.box-photographer .photo img:hover {
+.box-photographer:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   cursor: pointer;
 }
 
+.box-photographer {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  margin: 20px 30px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.box-photographer .photo {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box-photographer .photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
 .box-photographer .information {
-  display: none;
   z-index: 1;
   background: #fff;
-  margin: 0px 2px;
+  margin: 0px 5px;
   border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  top: 70%;
+  left: 12%;
 }
 
 .box-photographer .information .name {
-  display: flex;
-  justify-content: center;
   font-family: Geometria;
   font-size: 20px;
   color: #BE2D29;
@@ -131,9 +145,42 @@
 }
 
 .box-photographer .information .city {
-  display: flex;
-  justify-content: center;
   font-family: Geometria;
   font-size: 15px;
   color: #BE2D29;
+}
+
+.box-photographer .information .cost {
+  font-family: Geometria;
+  font-size: 15px;
+  color: #BE2D29;
+}
+
+.footer {
+  margin-top: 20px;
+  background: #ffb87b;
+}
+
+.information a:visited {
+  text-decoration: none;
+  color: #FFE2C9 !important;
+  /* Цвет ссылок */
+}
+
+.information a:active {
+  text-decoration: none;
+  color: #FFE2C9 !important;
+  /* Цвет ссылок */
+}
+
+.information a {
+  text-decoration: none;
+  color: #FFE2C9 !important;
+  /* Цвет ссылок */
+}
+
+.information a:hover {
+  text-decoration: none;
+  color: #FFE2C9 !important;
+  /* Цвет ссылок */
 }

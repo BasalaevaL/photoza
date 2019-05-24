@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.dialog-page {
+  background-image: url(/app/image/7772.gif);
+  background-repeat: repeat;
+  background-color: #FFCCA1;
+  background-attachment: fixed;
+  background-size: 0% auto;
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.dialog {
+  width: 60%;
+  height: auto;
+  background: #ffe2c9;
+  margin: 120px auto 0 auto;
+  padding: 20px 0px;
+}
+
+.dialog-box:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-box {
+  width: 80%;
+  height: auto;
+  padding: 10px 30px;
+  border-bottom: 1px solid #BE2D29;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+}
+
+.dialog-box a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+}
+
+.dialog-box__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.dialog-box__information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dialog-box__information .name {
+  margin: 0px 100px;
+}
+
+.dialog-box__information .name span {
+  font-family: Geometria;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dialog-box__information .message {
+  margin: 0px 100px;
+  background: #BE2D29;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-box__information .message span {
+  font-family: Geometria;
+  font-size: 40px;
+}
+
+.dialog-box a:visited {
+  text-decoration: none;
+  color: #000 !important;
+  /* Цвет ссылок */
+}
+
+.dialog-box a:active {
+  text-decoration: none;
+  color: #000 !important;
+  /* Цвет ссылок */
+}
+
+.dialog-box a {
+  text-decoration: none;
+  color: #000 !important;
+  /* Цвет ссылок */
+}
+
+.dialog-box a:hover {
+  text-decoration: none;
+  color: #000 !important;
+  /* Цвет ссылок */
+}

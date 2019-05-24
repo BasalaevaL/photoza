@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app/css/main.css" type = "text/css">
   <link rel="stylesheet" href="app/css/search.css" type = "text/css">
+  <link rel="stylesheet" href="app/css/scroll.css" type = "text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -17,13 +18,19 @@
 </head>
 <body class="page-search">
 <header class="menu">
-  <!--  <div class="menu__left">pphotoza@gmail.com</div>-->
     <div class="menu__right">
       <div class="menu__right__link"><a href="search.html">Найти</a></div>
-      <div class="menu__right__link"><a href="personal.html">Личный кабинет</a></div>
+      <div class="menu__right__text">pphotoza@gmail.com</div>
+      <div class="menu__right__text">г.Кострома</div>
+      <div class="menu__right__link"><a href="personal.html">Страница фотографа</a></div>
       <div class="menu__right__link"><a href="login.html">Войти</a></div>
+      <div class="menu__right__link"><a href="account.html">Личный кабинет</a></div>
+      <div class="menu__right__link"><a href="chat.html">Чат с фотографом</a></div>
+      <div class="menu__right__link"><a href="error.html">Ошибка</a></div>
+      <div class="menu__right__link"><a href="gallery.html">Галерея</a></div>
     </div>
   </header>
+
   <div class="search-fon">
   <div class="search-photographer">
     <div class="box-title">
@@ -76,148 +83,199 @@
 
     <div class="photographer-list">
         <div class="box-photographer">
+          <a href="personal.html">
             <div class="photo" onclick="openBlock(this)">
               <img src="app/image/70Q4_MP_zfA.jpg">
             </div>
             <div class="information">
-              <a href="personal.html">
-              <div class="name">Басалаева Лия</div>
-              <div class="city">г.Кострома</div>
-            </a>
+              <div class="name">Имя: Басалаева Лия</div>
+              <div class="city">Город: Кострома</div>
+              <div class="cost">Стоимость съемки: 2000₽</div>
             </div>   
+            </a>
         </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
-        </div>   
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
+        </div> 
+        </a>  
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Басалаева Лия</div>
-          <div class="city">Кострома</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
-        </div>   
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
+        </div>  
+        </a> 
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
-        </div>   
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
+        </div>  
+        </a> 
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
-        </div>   
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
+        </div>  
+        </a> 
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
-        </div>   
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
+        </div> 
+        </a>  
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div>
 
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div>
+
       <div class="box-photographer">
+        <a href="personal.html">
         <div class="photo" onclick="openBlock(this)">
           <img src="app/image/403909.jpg">
         </div>
         <div class="information">
-          <div class="name">Фамилия Имя</div>
-          <div class="city">Город</div>
+          <div class="name">Имя: Фамилия Имя</div>
+          <div class="city">Город: Город</div>
+          <div class="cost">Стоимость съемки: 0000₽</div>
         </div>   
+      </a>
       </div> 
 
     </div>
   </div>
+<!--футер-->
+<div class="fon4">
+<footer class="footer">
+    © 2019 «PHOTOZA»
+</footer>
 </div>
+
+<div class="totop">
+  <a href="#top" class="totop-button"><img src="app/image/icons8-slide-up-filled-501.png"></a>
+</div>
+
 </body>
 </html>

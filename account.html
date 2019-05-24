@@ -6,33 +6,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app/css/main.css" type = "text/css">
   <link rel="stylesheet" href="app/css/account.css" type = "text/css">
+  <link rel="stylesheet" href="app/css/scroll.css" type = "text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="app/js/personal.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="app/js/account.js"></script>
 
 </head>
 <body class="account-page">
+  <header class="menu">
+    <div class="menu__right">
+      <div class="menu__right__link"><a href="search.html">Найти</a></div>
+      <div class="menu__right__text">pphotoza@gmail.com</div>
+      <div class="menu__right__text">г.Кострома</div>
+      <div class="menu__right__link"><a href="personal.html">Страница фотографа</a></div>
+      <div class="menu__right__link"><a href="login.html">Войти</a></div>
+      <div class="menu__right__link"><a href="account.html">Личный кабинет</a></div>
+      <div class="menu__right__link"><a href="chat.html">Чат с фотографом</a></div>
+      <div class="menu__right__link"><a href="error.html">Ошибка</a></div>
+      <div class="menu__right__link"><a href="gallery.html">Галерея</a></div>
+    </div>
+  </header>
   <div class="account">
   <div class="account-title">
     <span>Личный кабинет</span>
   </div>
-  <div class="account-menu">
-    <div class="account-menu__link"><span>Страница</span></div>
-    <div class="account-menu__link"><span>Личные данные</span></div>
-    <div class="account-menu__link"><span>Чаты</span></div>
-  </div>
-  <div class="account-box">
-    <div class="page">
-      <div class="style">
-        
+  <div class="account-until">
+    <div class="information">
+      <div class="photo"><img src="app/image/403909.jpg"></div>
+      <div class="about-me">
+        <div class="about-me__name">Фамилия Имя</div>
+        <div class="about-me__city">Город</div>
+        <div class="about-me__style">В каких направлениях съемка</div>
+        <div class="about-me__about-me">О себе что-нибудь</div>
+        <div class="about-me__cost">0000руб</div>
       </div>
+      <div class="edit">
+        <a href="account-edit.html">
+          <button><span>Редактировать</span></button>
+        </a>
+      </div>
+    </div>
+
+
+
+<div class="gallery">
+  <div class="download">
+    <span class="download__title">Загрузить фото</span>
+     <div class="download__img">
+     <form  method="POST" enctype="multipart/form-data" name="fileinfo" id="fileinfo">
+     <!-- <input type="file" name="file" value="" id="uploade-file">-->
+      <div class="fl_upld">
+        <label><input id="fl_inp" type="file" name="file">Выберите файл</label>
+        <div id="fl_nm">Файл не выбран</div>
+      </div>
+      <button type="submit" name="button"class="upload-button">Загрузить</button>
+     </form>
+    </div>
+  </div>
+
+    <div class="photobox">
+      <img class="photo" src="app/image/galery1/IMG_20180801_183753-min.jpg" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/IMG_20180813_114353-min.jpg" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/IMG_6897-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/IMG_7254-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0077-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0101-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0111-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0119-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0122-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0135-min.jpg" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0181-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0215-min.jpg" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0245-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0251-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0269-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0299-min.jpg" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0443-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0487-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0588-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0634-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
+    <div class="photobox">
+      <img src="app/image/galery1/_DSC0692-min.JPG" onmouseover="openBlock(this)">
+      <img class="delete" src="app/image/icons8-trash-52.png">
+    </div>
     </div>
   </div>
 </div>
 
+<!--футер-->
+<div class="fon4">
+<footer class="footer">
+    © 2019 «PHOTOZA»
+</footer>
+</div>
+
+<script>
+$(document).ready( function() {
+    $("#fl_inp").change(function(){
+         var filename = $(this).val().replace(/.*\\/, "");
+         $("#fl_nm").html(filename);
+    });
+});
+</script>
 </body>
 </html>

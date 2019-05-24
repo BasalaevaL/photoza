@@ -6,9 +6,9 @@
 }
 .account{
 	width: 90%;
-	height: 800px;
-	background: rgba(255,255,255,0.5);
-	margin: 0px auto;
+	height: auto;
+	background: rgba(255,255,255,0.7);
+	margin: 10px auto;
 }
 .account-title{
 	display: flex;
@@ -17,24 +17,187 @@
 	span{
 		font:{
 			family: Geometria;
-			size: 30px;
 			weight: bold;
+			size: 50px;
 		}
+		color: #FFE2C9;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0px 20px;
+    line-height: 1.5em;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 	}
 }
-.account-menu{
+.account-until{
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+}
+.information{
+	display: flex;
 	flex-direction: row;
+	margin: 20px auto;
+	padding-bottom: 30px;
+	justify-content: space-around;
+	width: 60%;
+	border-bottom: 3px solid #BE2D29;
 
-	&__link{
-		margin: 0px 20px;
-		span{
+	.photo{
+		img{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+		}
+	}
+	.about-me{
+
+		&__name{
+			margin-bottom: 10px;
+			font:{
+				family: Geometria;
+				size: 30px;
+			}
+		}
+		&__city{
+			margin-bottom: 10px;
+			font:{
+				family: Geometria;
+				size: 25px;
+			}
+		}
+		&__style{
+			margin-bottom: 10px;
 			font:{
 				family: Geometria;
 				size: 20px;
 			}
 		}
+		&__about-me{
+			margin-bottom: 10px;
+			font:{
+				family: Geometria;
+				size: 20px;
+			}
+		}
+		&__cost{
+			margin-bottom: 10px;
+			font:{
+				family: Geometria;
+				size: 30px;
+			}
+		}
+	}
+	.edit{
+		display: flex;
+		align-items: flex-end;
+		button{
+		background: #BE2D29;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 30px;
+		  span{
+        font:{
+        	family: Geometria;
+        	size: 20px;
+        }
+        color: #FFE2C9;
+		  }
+	  }
+	}
+}
 
+.download{
+	margin: 10px auto 0px auto;
+	width: 300px;
+  height: auto;
+  background-color: none;
+  position: relative;
+  color: #000;
+  text-align: center;
+  height: auto;
+  border: 3px dashed #BE2D29;
+
+  &__title{
+  	font:{
+  		family: Geometria;
+  		size: 20px;
+  		weight: bold;
+  	}
+  	color: #FFE2C9;
+  	text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+  	text-transform: uppercase;
+  	margin-top: 10px;
+  }
+}
+.download-img{
+	display: block;
+  position: absolute;
+  width: 100%;
+  top:20px;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+.fl_upld{
+	width:300px;
+	margin-top: 20px;
+}
+#fl_inp{
+	display:none;
+}
+.fl_upld label{
+ cursor:pointer;
+ background:#BE2D29;
+ border-radius:3px;
+ padding:10px 25px;
+ color:#fff;
+ font-weight:bold;
+ text-align: center;
+}
+.fl_upld label:hover{
+	background:#FFB87B;
+}
+#fl_nm{
+ margin-top:10px;
+ color:#f00;
+}
+
+
+.upload-button{
+	background-color: #BE2D29;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font:{
+		family: Geometria;
+		size: 15px;
+		weight: bold;
+	}
+	color: #fff;
+	margin-top: 10px;
+}
+.upload-button:hover{
+  border: 1px solid #000;
+}
+
+.gallery{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 20px;
+
+	.photobox{
+		position: relative;
+		.photo{
+
+		}
+		.delete{
+			display: none;
+			cursor: pointer;
+			position: absolute;
+			top: 75%;
+			right: 0;
+			width: 40px;
+			height: 40px;
+		}
 	}
 }

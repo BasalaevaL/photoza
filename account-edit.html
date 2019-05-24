@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHOTOZA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app/css/main.css" type = "text/css">
+  <link rel="stylesheet" href="app/css/account-edit.css" type = "text/css">
+  <link rel="stylesheet" href="app/css/scroll.css" type = "text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="app/js/account-edit.js"></script>
+
+</head>
+<body class="page-edit">
+  <header class="menu">
+    <div class="menu__right">
+      <div class="menu__right__link"><a href="search.html">Найти</a></div>
+      <div class="menu__right__text">pphotoza@gmail.com</div>
+      <div class="menu__right__text">г.Кострома</div>
+      <div class="menu__right__link"><a href="personal.html">Страница фотографа</a></div>
+      <div class="menu__right__link"><a href="login.html">Войти</a></div>
+      <div class="menu__right__link"><a href="account.html">Личный кабинет</a></div>
+      <div class="menu__right__link"><a href="chat.html">Чат с фотографом</a></div>
+      <div class="menu__right__link"><a href="error.html">Ошибка</a></div>
+      <div class="menu__right__link"><a href="gallery.html">Галерея</a></div>
+    </div>
+  </header>
+  <div class="account-edit">
+  <div class="account-edit-title">
+    <div class="back"><a href="account.html"><img src="app/image/icons8-back-arrow-501.png"></a></div>
+    <span>Изменение данных</span>
+  </div>
+    <div class="information">
+      <div class="photo">
+        <img src="app/image/403909.jpg" onmouseover="openBlock(this)">
+        <img class="transform" src="app/image/icons8-compact-camera-100.png" >
+      </div>
+      <div class="about-me">
+        <div class="about-me__name">
+          <input type="text" name="name" placeholder="Введите имя" />
+        </div>
+        <div class="about-me__city">
+          <input type="text" name="city" placeholder="Введите город"/>
+        </div>
+        <div class="about-me__style">
+          <textarea name="style" placeholder="В каких направлениях производится съемка"></textarea>
+        </div>
+        <div class="about-me__about-me">
+          <textarea placeholder="Что-нибудь о себе"></textarea>
+        </div>
+        <div class="about-me__cost">
+          <input type="text" name="cost" placeholder="Введите сумму за съемку">
+        </div>
+      </div>
+    </div>
+      <div class="edit">
+        <a href="account.html">
+          <button><span>Сохранить изменения</span></button>
+        </a>
+      </div>
+  </div>
+</body>
+</html>

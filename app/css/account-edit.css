@@ -1,0 +1,131 @@
+.page-edit {
+  background-image: url(/app/image/photo-min.jpg);
+  background-attachment: fixed;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.account-edit {
+  width: 90%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 20px auto;
+  font-family: Geomtria;
+  font-size: 25px;
+}
+
+.account-edit-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.account-edit-title span {
+  font-family: Geometria;
+  font-weight: bold;
+  font-size: 50px;
+  color: #FFE2C9;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 20px;
+  line-height: 1.5em;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.information .photo {
+  position: relative;
+}
+
+.information .photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.information .photo .transform {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 0px;
+}
+
+.information .about-me {
+  margin-left: 30px;
+  width: 50%;
+}
+
+.information .about-me__name {
+  margin-bottom: 10px;
+}
+
+.information .about-me__name input {
+  width: 90%;
+  height: 50px;
+}
+
+.information .about-me__city {
+  margin-bottom: 10px;
+}
+
+.information .about-me__city input {
+  width: 90%;
+  height: 50px;
+}
+
+.information .about-me__style {
+  margin-bottom: 10px;
+}
+
+.information .about-me__style textarea {
+  width: 90%;
+  height: 100px;
+}
+
+.information .about-me__about-me {
+  margin-bottom: 10px;
+}
+
+.information .about-me__about-me textarea {
+  width: 90%;
+  height: 100px;
+}
+
+.information .about-me__cost input {
+  width: 90%;
+  height: 50px;
+}
+
+.edit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.edit button {
+  background: #BE2D29;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.edit button span {
+  font-family: Geometria;
+  font-size: 30px;
+  color: #FFE2C9;
+}
